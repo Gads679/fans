@@ -1,0 +1,214 @@
+body {
+    margin:0;
+    padding:0;
+    width: 320px;
+    margin: 0 auto;
+    background-color: var(--background);
+    color: white;
+
+}
+
+
+@font-face{
+    font-family: "EB Garamond";
+    src: url("../s-chistogo-lista-main/fonts/ebgaramondmedium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Inter";
+    src: url("../s-chistogo-lista-main/fonts/interregular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.header{
+    padding: 26px 20px;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo-image{
+    width: 78.45px;
+    height: 15.45px;
+}
+
+.header__menu-item:nth-of-type(2){
+    padding: 12px 0;
+}
+
+.header__menu-item_active{
+    text-decoration: underline;
+}
+
+
+
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+.section{ /*Устанавливает отступы для разделов. */
+    padding: 0 25px;
+}
+
+ .section_theme-yellow{ /*Определяет стили для разделов с разными темами. */
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+ .section_theme-black{ 
+    background-color: var(--background);
+    color: var(--white);
+}
+
+.content-sectiont__list-item{ 
+    padding: 10px 0 ;
+}
+
+ .content-sectiont__subtitle{ /*Использует flexbox для вертикального выравнивания. */
+    display: flex;
+    flex-direction: column;
+}
+
+.content-sectiont__list-accent{  /*Устанавливает жирный шрифт для акцентированных элементов. */
+    font-weight: bold;
+}
+
+.content-sectiont__introducion{
+    font-family: "inter";
+    margin: 33px 0;
+}
+
+
+/* Устанавливает фон для обложки с изображением. */
+.cover{
+    margin-left: 23px;
+    background-image: url("../s-chistogo-lista-main/images/cover.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px;
+}
+
+/* Задает стили для заголовка обложки. */
+.cover__title{
+    display: flex;
+    flex-direction: column;
+    color: var(--tetx-gray);
+}
+
+
+/* Использует шрифт "EB Garamond" и делает текст жирным. */
+.accent-span{
+    font-family: "EB Garamond";
+    font-weight: bold;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+
+.intro{
+    margin:0 31px;
+    font-family: "intro";
+    font-size: 20px;
+}
+
+ .intro__heading{ /*Выравнивает заголовок введения. */
+    display: flex;
+    justify-content: space-between;
+    color: var(--tetx-gray);
+}
+
+.intro__main-text /*Устанавливает отступы для основного текста введения. */
+{ 
+    margin: 32px 0;
+}
+
+
+
+.card{
+    border-radius: 25px;
+    padding:28px ;
+    margin-bottom: 32px;
+}
+
+ .card_theme-dark /* Определяют стили для карточек с темной и светлой темами. */
+{
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+.card_theme-bright{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+/* Использует flexbox для вертикального расположения карточек. */
+.card-list{  
+    display: flex;
+    flex-direction: column;
+    padding: 0 23px;
+    margin-top: 32px
+}
+
+.card__author{  
+    display: flex;
+    flex-direction: column;
+}
+
+.card__author-photo{
+    width: 100px;
+    height: 100px;
+}
+
+.card__author-name{
+    font-weight: bold;
+    font-family: "inter";
+    margin-top: 8px;
+}
+
+.card__tetx{
+    margin-top: 8px;
+}
+
+
+ :root{ /*Определяет CSS-переменные для использования в других стилях. Э то позволяет легко изменять цвета и стили в одном месте. */
+    --background: #131313;
+    --white: #f5f5f5;
+    --text-gray: #bbbbbb54;
+    --yellow: #fee42a;
+    --black: #000;
+    --gray: #343434;
+}
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 20px;
+    padding: 20px;
+}
+
+.footer__copy{
+    font-family: "inter";
+}
